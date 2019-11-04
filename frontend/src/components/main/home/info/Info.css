@@ -1,0 +1,138 @@
+.font-title-info {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.75;
+    text-align: left;
+    height: 3em;
+    top: 1em;
+    left:1.5em;
+}
+
+.font-api-info{
+    color: grey;
+    font-size: 13px;
+    height: 0.2em;
+    left:2em;
+}
+
+.space-loc-info {
+    height: 0.2em;
+}
+
+.space-gate-info {
+    height: 1.5em;
+}
+
+.font-addr-info {
+    height: 1.5em;
+    font-size: 11px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.font-time-info {
+
+    font-size: 14px;
+
+}
+
+.font-name-info {
+
+    color: black;
+    font-size: 23px;
+    text-align: left;
+    height: 3em;
+    left:1.5em;
+}
+
+.placeholder-info {
+    width:1em;
+    object-fit: fill;
+}
+
+.clock-info {
+    width:1.5em;
+    object-fit: fill;
+}
+
+.event-image-info {
+    width:100%;
+    height:10em;
+    object-position: 0% 50%;
+    object-fit: cover;
+}
+
+.shop-col-info {
+    top: 50px;
+}
+
+.button-maps-event {
+    height:1.6em;
+    border-radius: 1em;
+    font-size: 14px;
+    font-weight: lighter;
+    background: linear-gradient(#852D50, #2B0D2B);
+}
+
+.button-maps-event:hover{
+    transform:scale(1.1)
+}
+.button-maps-event:focus{
+    outline:none;
+}
+
+.row-api-info {
+    height: 5.3em;
+    overflow-y: hidden;
+}
+
+.card-col-info {
+    height: 11em;
+}
+
+.card-info {
+    height:8em;
+
+}
+
+.col-weather-info {
+    border-right: solid rgb(216,216,216) 2px;
+}
+
+.col-gate-info {
+    border-right: solid rgb(216,216,216) 2px;
+}
+
+.shop-button-info {
+    background: url("../../../../assets/Asset 1ShoTic.png") no-repeat top center / 100% 100%;
+    position: absolute;
+    cursor:pointer;
+    border: none;
+    width: 70px;
+    height: 35px;
+    top:1em;
+    right: 1.5em;
+}
+.shop-button-info:hover{
+    transform:scale(1.1)
+}
+.shop-button-info:focus{
+    outline:none;
+}
+
+.lineup-col-info {
+    left: 2em;
+    height: 3em;
+}
+
+.ticketprice-info {
+    border-top:2em;
+    height: 2em;
+}
+.button-tm-info {
+    left:2em;
+}
+
+
+

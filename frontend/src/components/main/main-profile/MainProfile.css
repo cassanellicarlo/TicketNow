@@ -1,0 +1,6 @@
+.col-main-profile{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-right: solid #adac97 1px;
+    height: 100vh;
+}

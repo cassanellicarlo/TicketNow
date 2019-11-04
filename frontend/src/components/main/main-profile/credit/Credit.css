@@ -1,0 +1,74 @@
+.title-credit {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.75;
+    text-align: left;
+    height: 160px;
+    top: 30px;
+    left:60px;
+}
+
+.page-credit{
+    height: 100vh;
+}
+
+.flex-column-credit {
+    max-width: 85%;
+    height: 60px;
+}
+
+.buttons-credit {
+    position:relative;
+    width:23em;
+    background-color:transparent;
+    border-color:transparent;
+    color:black;
+}
+
+.buttons-credit:hover {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    transition: 1.5s;
+
+}
+
+.buttons-credit:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.album-credit{
+    height: 8em;
+    width: 8em;
+    border-radius: 0.5em;
+    margin-bottom: 4em;
+}
+
+.artist-credit{
+    color: black;
+    font-size: 20px;
+}
+
+.view-column-credit{
+    left: 2rem;
+    height: 100vh;
+}
+
+.space-credit{
+    height: 1em;
+}
+
+.container-credit{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+.centered-credit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    top: 1em;
+}

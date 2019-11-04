@@ -1,0 +1,55 @@
+.title-profile {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.75;
+    text-align: left;
+    height: 160px;
+    top: 30px;
+    left:60px;
+}
+
+.flex-column-profile {
+    max-width: 85%;
+    height: 60px;
+}
+
+.buttons-profile {
+    width:23em;
+    background-color:transparent;
+    border-color:transparent;
+    color:black;
+}
+
+.buttons-profile:hover {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    transition: 1.5s;
+
+}
+
+.buttons-profile:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.album-profile{
+    height: 8em;
+    width: 8em;
+    border-radius: 0.5em;
+    margin-bottom: 4em;
+}
+
+.artist-profile{
+    color: black;
+    font-size: 20px;
+}
+
+.view-column-profile{
+    left: 2rem;
+    height: 100vh;
+}
+
+.space-profile{
+    height: 0.5em;
+}

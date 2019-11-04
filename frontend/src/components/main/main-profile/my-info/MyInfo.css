@@ -1,0 +1,55 @@
+.title-my-info {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.75;
+    height: 17vh;
+    top: 30px;
+}
+
+.image-my-info{
+    width: 12vw;
+}
+
+.carousel-indicators li{
+    background-color:black !important;
+    position: relative;
+    bottom: 2vh;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("../../../../assets/arrow-1.png") !important;
+    border-image: none !important;
+    position: absolute;
+    top: 50vh;
+}
+
+.carousel-control-next-icon{
+    background-image: url("../../../../assets/arrow-2.png") !important;
+    border-image: none !important;
+    position: absolute;
+    top: 50vh;
+}
+
+.p-my-info{
+    height: 3vh;
+}
+
+.input-my-info{
+    border: none;
+}
+
+.button-my-info{
+    background: linear-gradient(#852D50, #2B0D2B);
+    width: 6em;
+    height: 2em;
+    border-radius: 100px;
+}
+
+.logo-my-info {
+    width: 1em;
+    float: left;
+  }

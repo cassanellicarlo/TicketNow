@@ -1,0 +1,55 @@
+.fit-signup {
+    position: fixed;
+}
+
+.font-title-signup {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    height: 100px;
+}
+
+.font-min-signup {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+.text-line-signup {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
+
+.main-signup {
+    width: 450px;
+    right: 50px;
+    top: 100px;
+    position: absolute;
+}
+
+.form-email-signup {
+    height: 70px;
+}
+
+.form-bottom-signup {
+    height: 80px;
+}
+
+.button-register {
+  height: 20px;
+  text-align: center;
+}
+
+.alertMessage-signup{
+    text-align: center;
+    color: white!important;
+    background-color: #f8d7da00!important;
+    border-color: #f5c6cb!important;
+  }

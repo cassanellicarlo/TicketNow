@@ -1,0 +1,10 @@
+.img-comment {
+    position: relative;
+    width: 3em;
+    top: 1em
+}
+
+.text-comment {
+    position: relative;
+    top: 0.5em
+}

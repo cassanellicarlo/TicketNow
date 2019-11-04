@@ -1,0 +1,17 @@
+.fit-not-found {
+    position: fixed;
+}
+
+.font-title-not-found {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    height: 100px;
+}
+
+.main-not-found {
+    width: 450px;
+    right: 50px;
+    top: 100px;
+    position: absolute;
+}

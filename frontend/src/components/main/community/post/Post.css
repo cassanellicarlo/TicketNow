@@ -1,0 +1,55 @@
+
+
+.post{
+    max-width: 100%;
+}
+
+.title-post {
+    max-height: 1em;
+}
+
+.name-post {
+    position:absolute;
+    font-size: 18px;
+    top: 1em;
+    left:3.8em;
+}
+
+.text-post {
+    max-height: 2em;
+}
+
+.buttons-post {
+    position: absolute;
+    bottom:0;
+    border-top: solid #adac97 1px;
+}
+
+.button-post {
+    cursor:pointer;
+    position:absolute;
+    border: none;
+    left: 3vw;
+    top:0.65em;
+    width: 126px;
+    height: 21px;
+
+}
+.button-post:hover{
+    transform:scale(1.1)
+}
+.button-post:focus{
+    outline:none;
+}
+
+.likebutton-post {
+    background: url("../../../../assets/unlike.png") no-repeat top center / 100% 100%;
+}
+
+.commentbutton-post {
+    background: url("../../../../assets/comment.png") no-repeat top center / 100% 100%;
+}
+
+.messagebutton-post {
+    background: url("../../../../assets/private-msg.png") no-repeat top center / 100% 100%;
+}

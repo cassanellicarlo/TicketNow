@@ -1,0 +1,87 @@
+stages:
+  - test
+  - push
+  - deploy
+
+backend_test:
+  stage: test
+  image: maven:3.6.2-jdk-8
+  script:
+    - cd backend
+    - mvn clean package
+  artifacts:
+    paths:
+      - backend/target/*.jar
+  tags:
+    - test
+
+# . means that is not an active, runnable job
+.create_image: &create_image
+  stage: push
+  image: docker:18.09
+  variables:
+    DOCKER_DRIVER: overlay2 # File system driver
+  services:
+    - docker:18.09-dind # dind variants of this image will automatically generate TLS certificates
+  script:
+    - cd $NAME
+    - docker login -u dockerUser -p digitalgarage gitlab.b46.it:4567
+    - docker build -t gitlab.b46.it:4567/ticketnow/ticketnow/$NAME . #
+    - docker push gitlab.b46.it:4567/ticketnow/ticketnow/$NAME
+  dependencies:
+    - backend_test
+  tags:
+    - docker
+
+build_backend:
+    <<: *create_image
+    variables:
+        NAME: "backend"
+    
+build_frontend:
+    <<: *create_image
+    variables:
+        NAME: "frontend"
+
+deploy_app:
+  stage: deploy
+  image: debian:latest
+  before_script:
+    ##
+    ## Install ssh-agent if not already installed, it is required by Docker.
+    ## (change apt-get to yum if you use an RPM-based image)
+    ##
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+
+    ##
+    ## Run ssh-agent (inside the build environment)
+    ##
+    - eval $(ssh-agent -s)
+
+    ##
+    ## Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+    ## We're using tr to fix line endings which makes ed25519 keys work
+    ## without extra base64 encoding.
+    ## https://gitlab.com/gitlab-examples/ssh-private-key/issues/1#note_48526556
+    ##
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+
+    ##
+    ## Create the SSH directory and give it the right permissions
+    ##
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script: 
+    - scp ./docker-compose.yml root@142.93.104.71:/root/app
+    - ssh root@142.93.104.71 "
+      cd /root/app;
+      docker login -u dockerUser -p digitalgarage gitlab.b46.it:4567;
+      docker-compose down;
+      docker-compose pull;
+      docker-compose up -d;
+      echo y | docker image prune;"
+  tags:
+    - deploy
+    

@@ -1,0 +1,19 @@
+.title-country {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.75;
+    text-align: left;
+    height: 160px;
+    top: 30px;
+    left:60px;
+}
+
+.image-country {
+    width: 5em;
+}
+
+.font-country {
+    font-size: 1em;
+    height: 2em;
+}

@@ -1,0 +1,45 @@
+.col-community {
+    border-right: solid #adac97 1px;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.title-community {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.75;
+    text-align: left;
+    height: 160px;
+    top: 30px;
+    left:60px;
+}
+
+.modal-header-community{
+    height: 4em;
+    width: 30em;
+}
+
+.modal-text-community{
+    width: 28em;
+}
+
+.modal-title-community{
+    width: 28em;
+    height: 2em;
+}
+
+.modal-price-community{
+    height: 2em;
+    width: 5em;
+}
+
+.rowspace-community{
+    height: 1em;
+}
+
+.rowspace2-community{
+    height: 3em;
+}
+

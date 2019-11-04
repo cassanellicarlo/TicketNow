@@ -1,0 +1,84 @@
+.fit-login {
+  position: fixed;
+}
+
+.main-login {
+    width: 450px;
+    right: 50px;
+    top: 100px;
+    position: absolute;
+}
+
+.font-title-login {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  height: 70px;
+}
+
+.font-max-login {
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  height: 70px;
+}
+
+.font-min-login {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  height: 75px;
+}
+
+.or-login {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  height: 45px;
+}
+
+.recover-psw-login {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  height: 60px;
+}
+
+.spotify-button-login {
+  height: 90px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.button-login {
+  height: 20px;
+  text-align: center;
+}
+
+.text-line-login {
+  background-color: transparent;
+  color: #eeeeee;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #eeeeee 1px;
+  padding: 3px 10px;
+}
+
+.spotify-logo-login {
+  width: 30px;
+  float: left;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(175, 148, 162);
+}
+
+.errorMessage-login{
+  text-align: center!important;
+  color: white!important;
+  background-color: #f8d7da00!important;
+  border-color: #f5c6cb!important;
+}

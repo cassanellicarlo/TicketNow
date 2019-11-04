@@ -1,0 +1,60 @@
+.column-navbar{
+    background: linear-gradient(#2B0D2B, #852D50);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 5em;
+}
+.button-navbar{
+    background: none;
+    border: none;
+    opacity: 0.9;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: top;
+}
+
+.button-navbar:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.button-navbar:focus{
+    outline: none;
+}
+
+.button-navbar:focus img{
+    outline: none;
+    /* width: 45%; */
+    border: 0.3em double white;
+    border-radius: 6em;
+}
+
+.image-navbar{
+    width: 55%;
+}
+
+.image-navbar:hover{
+    border: 0.3em double white;
+    border-radius: 6em;
+    /*aggiungi lo zoom*/
+}
+
+.image-navbar:focus {
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.tnlogo-col-navbar{
+
+    position:absolute;
+    bottom:1.5em;
+    left:5vh
+}
+
+.tnlogo-navbar {
+
+    width:2em;
+}
